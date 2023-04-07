@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "484708245598",
+    "project_id": "lecmcc-91403",
+    "storage_bucket": "lecmcc-91403.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484708245598:android:cc360a95e8ccba619454cf",
+        "android_client_info": {
+          "package_name": "com.example.lec1mcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484708245598-73rdnffl03mislvkt0i6qed8p6jd90g5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lec1mcc",
+            "certificate_hash": "8e1f950bba7c2e5988589da8181fc0f3918b1b31"
+          }
+        },
+        {
+          "client_id": "484708245598-p5pnij4jg0dapls6m7cjmvs40meoqqqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpy_mLCGuQ_gjxAbDQeEoKt7OlfH2fNMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484708245598-p5pnij4jg0dapls6m7cjmvs40meoqqqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
