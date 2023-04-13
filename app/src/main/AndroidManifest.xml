@@ -14,6 +14,10 @@
         android:theme="@style/Theme.Lec1MCC"
         tools:targetApi="31">
         <activity
+            android:name=".SingUpAC"
+            android:exported="false" />
+
+        <activity
             android:name=".SigninAc"
             android:exported="false" />
         <activity
@@ -29,7 +33,7 @@
             android:name=".Addnote"
             android:exported="false" />
         <activity
-            android:name=".SingUpAC"
+            android:name=".chat.chating"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

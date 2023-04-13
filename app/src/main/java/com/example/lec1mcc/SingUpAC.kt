@@ -39,16 +39,12 @@ class SingUpAC : AppCompatActivity() {
             createNewAccount(email.toString(), password.toString())
         }
     }
-    fun updateUI() {
-        var i = Intent(this, SigninAc::class.java)
-        startActivity(i)
-    }
+
     private fun createNewAccount(email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Log.d("balsam", "createUserWithEmail:success")
-                    val user = auth.currentUser
                     updateUI()
                 } else {
                     Log.w("balsam", "createUserWithEmail:failure", task.exception)
@@ -59,6 +55,18 @@ class SingUpAC : AppCompatActivity() {
             }
 
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        val currentUser = auth.currentUser
+        if(currentUser != null){
+            updateUI()
+        }
+    }
+    fun updateUI() {
+        var i = Intent(this, SigninAc::class.java)
+        startActivity(i)
     }
 
 
